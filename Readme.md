@@ -1,4 +1,4 @@
-# RGB and Multi-Band Image Visualizer
+# SpectraView  -->RGB and Multi-Band Image Visualizer
 
 A desktop application built with Python and PyQt5 to load, visualize, and perform basic analysis on multi-band raster images (like GeoTIFF) and standard image formats. It allows users to map spectral bands to RGB channels, view individual bands, apply common remote sensing filters, adjust image properties, and perform basic manipulations.
 
