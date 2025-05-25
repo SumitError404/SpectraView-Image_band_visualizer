@@ -1,83 +1,150 @@
-# SpectraView  -->RGB and Multi-Band Image Visualizer
+# **SpectraView**
 
-A desktop application built with Python and PyQt5 to load, visualize, and perform basic analysis on multi-band raster images (like GeoTIFF) and standard image formats. It allows users to map spectral bands to RGB channels, view individual bands, apply common remote sensing filters, adjust image properties, and perform basic manipulations.
+*A Desktop Application for RGB & Multi-Band Image Visualization and Analysis*
 
-## Features
+![App Screenshot](https://github.com/user-attachments/assets/ba1a96f0-f939-4b14-bb5a-82122ed4379b)
 
-* **Load Multiple Formats:** Opens multi-band GeoTIFFs (`.tif`, `.tiff`), JPEG (`.jpg`, `.jpeg`), and PNG (`.png`) files using Rasterio.
-* **Custom RGB Composites:** Interactively select source bands for Red, Green, and Blue display channels.
-* **Single Band View:** Display any individual band in grayscale.
-* **Predefined Filters:** Apply common filters and indices:
-    * Natural Color
-    * False Color Infrared (Vegetation Highlight)
-    * Urban/Soil Composite
-    * Water Bodies Enhancement
-    * NDVI (Normalized Difference Vegetation Index)
-    * SAVI (Soil-Adjusted Vegetation Index)
-    * EVI (Enhanced Vegetation Index)
-* **Image Adjustments:** Real-time sliders for Brightness, Contrast, and Sharpness.
-* **Basic Manipulations:** Toolbar actions for Zoom In/Out, Rotate (90° clockwise), and Center Crop.
-* **Save Current View:** Export the displayed image (with all adjustments) to PNG or JPG format.
-* **Interactive GUI:** User-friendly interface built with PyQt5.
+---
 
-## Requirements
+## 🛰️ Overview
 
-* **Python:** 3.6+
-* **Libraries:**
-    * `PyQt5`
-    * `rasterio`
-    * `numpy`
-    * `Pillow`
-    * <img width="494" alt="Screenshot 2025-04-11 at 12 08 21 PM" src="https://github.com/user-attachments/assets/ba1a96f0-f939-4b14-bb5a-82122ed4379b" />
- 
-<img width="320" alt="Screenshot 2025-04-11 at 12 08 39 PM" src="https://github.com/user-attachments/assets/d31e3bb3-84af-4b60-9440-b8a6ec688eb3" />
+**SpectraView** is a Python-based desktop application built with **PyQt5** that enables users to load, visualize, and perform basic analysis on **multi-band raster images** (e.g., GeoTIFFs) as well as standard image formats like JPEG and PNG.
 
-<img width="1191" alt="Screenshot 2025-04-11 at 12 09 18 PM" src="https://github.com/user-attachments/assets/0798fee0-449c-43b3-9386-459646ceeb05" />
+It supports **interactive RGB band compositing**, **grayscale band viewing**, **remote sensing filters**, and **real-time image adjustments**, making it useful for satellite imagery analysts, researchers, students, and geospatial professionals.
+
+---
+
+## 🔍 Features
+
+### 🗂️ **Image Support**
+
+* Load **multi-band raster images**: `.tif`, `.tiff` (GeoTIFF)
+* Load **standard images**: `.jpg`, `.jpeg`, `.png`
+
+### 🌈 **Visualization Options**
+
+* **Custom RGB Composite**: Choose any three bands as Red, Green, Blue
+* **Single Band Viewer**: Visualize any single band in grayscale
+
+### 🎨 **Remote Sensing Filters**
+
+* **Natural Color**
+* **False Color Infrared** (vegetation)
+* **Urban/Soil Composite**
+* **Water Body Enhancement**
+* **NDVI** (Normalized Difference Vegetation Index)
+* **SAVI** (Soil-Adjusted Vegetation Index)
+* **EVI** (Enhanced Vegetation Index)
+
+### 🧰 **Image Adjustment & Tools**
+
+* **Real-Time Controls**:
+
+  * Brightness
+  * Contrast
+  * Sharpness
+* **Basic Tools**:
+
+  * Zoom In / Zoom Out
+  * Rotate 90° Clockwise
+  * Center Crop
+* **Save Output**:
+
+  * Export current view (including enhancements) to `.png` or `.jpg`
+
+### 🖥️ **User-Friendly GUI**
+
+* Built with **PyQt5**
+* Intuitive layout with clear toolbar icons and control panels
+
+---
+
+## 📦 Requirements
+
+* **Python**: 3.6+
+* **Libraries**:
+
+  * `PyQt5`
+  * `rasterio`
+  * `numpy`
+  * `Pillow`
+
+---
+
+## 🛠️ Installation
+
+1. **Clone or download** the repository and ensure you have `band_visualizer.py` in your project folder.
+
+2. **Set up a virtual environment (recommended)**:
+
+   ```bash
+   # Linux / macOS
+   python3 -m venv venv
+   source venv/bin/activate
+
+   # Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+
+3. **Install the required packages**:
+
+   ```bash
+   pip install PyQt5 rasterio numpy Pillow
+   ```
+
+---
+
+## ▶️ Usage
+
+1. **Launch the app**:
+
+   ```bash
+   python band_visualizer.py
+   ```
+
+2. **Using the GUI**:
+
+   * 📁 **Upload Image**: Use the toolbar icon to load a `.tif`, `.jpg`, or `.png` file.
+   * 🎛️ **RGB Composites**:
+
+     * Use dropdowns to assign bands to Red, Green, Blue.
+     * Click **“Show Composite RGB Image”** to visualize.
+   * 🖤 **Single Band View**:
+
+     * Choose any band from the dropdown to view in grayscale.
+   * 🧪 **Apply Filters**:
+
+     * Choose from vegetation, urban, water filters.
+     * Select **“None”** to disable filtering.
+   * 🎚️ **Adjustments**:
+
+     * Move sliders for Brightness, Contrast, and Sharpness.
+   * 🔧 **Toolbar Tools**:
+
+     * Zoom, Rotate, and Crop tools for quick manipulations.
+   * 💾 **Save Image**:
+
+     * Click “Save Image” icon to export current view.
+
+---
+
+## 🖼️ Screenshots
+
+<p float="left">
+  <img width="494" alt="Screenshot 1" src="https://github.com/user-attachments/assets/ba1a96f0-f939-4b14-bb5a-82122ed4379b" />
+  <img width="320" alt="Screenshot 2" src="https://github.com/user-attachments/assets/d31e3bb3-84af-4b60-9440-b8a6ec688eb3" />
+</p>
+
+<p float="left">
+  <img width="1191" alt="Screenshot 3" src="https://github.com/user-attachments/assets/0798fee0-449c-43b3-9386-459646ceeb05" />
+  <img width="1191" alt="Screenshot 4" src="https://github.com/user-attachments/assets/68b59cb0-ab83-4b6f-b1ce-3d11816bc3ab" />
+</p>
 
 
-<img width="1191" alt="Screenshot 2025-04-11 at 12 09 18 PM" src="https://github.com/user-attachments/assets/68b59cb0-ab83-4b6f-b1ce-3d11816bc3ab" />
 
 
 
 
 
-## Installation
 
-1.  **Get the script:** Ensure you have the `band_visualizer.py` Python script file in a directory on your computer.
-
-2.  **Create and activate a virtual environment (Recommended):**
-    Open your terminal or command prompt, navigate to the directory containing the script, and run:
-
-    ```bash
-    # For Linux/macOS
-    python3 -m venv venv
-    source venv/bin/activate
-
-    # For Windows
-    python -m venv venv
-    .\venv\Scripts\activate
-    ```
-    *(You only need to create the `venv` once. Activate it each time you want to run the script in a new terminal session.)*
-
-3.  **Install the required libraries:**
-    With your virtual environment activated, run:
-    ```bash
-    pip install PyQt5 rasterio numpy Pillow
-    ```
-
-## Usage
-
-1.  **Run the application:**
-    Navigate to the directory containing the script in your terminal (make sure your virtual environment is activated) and run:
-    ```bash
-    python band_visualizer.py
-    ```
-
-2.  **Using the Tool:**
-    * Click **"Upload Image"** (toolbar icon) to load a supported image file. A dialog confirms the number of bands loaded.
-    * To view an **RGB composite**: Select bands using the "Red:", "Green:", and "Blue:" dropdowns, then click the **"Show Composite RGB Image"** button.
-    * To view a **single band**: Select a band from the "View Single Band:" dropdown. The display updates automatically.
-    * To apply a **filter**: Choose one from the "Apply Filter:" dropdown. The display updates automatically. Select "None" to disable filters.
-    * Use the **sliders** to adjust Brightness, Contrast, and Sharpness.
-    * Use the **toolbar buttons** (Zoom In, Zoom Out, Rotate, Crop Center) to manipulate the view.
-    * Click **"Save Image"** (toolbar icon) to save the currently displayed image to a PNG or JPG file.
