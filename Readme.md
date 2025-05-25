@@ -28,6 +28,18 @@ A desktop application built with Python and PyQt5 to load, visualize, and perfor
     * `rasterio`
     * `numpy`
     * `Pillow`
+    * <img width="494" alt="Screenshot 2025-04-11 at 12 08 21 PM" src="https://github.com/user-attachments/assets/ba1a96f0-f939-4b14-bb5a-82122ed4379b" />
+ 
+<img width="320" alt="Screenshot 2025-04-11 at 12 08 39 PM" src="https://github.com/user-attachments/assets/d31e3bb3-84af-4b60-9440-b8a6ec688eb3" />
+
+<img width="1191" alt="Screenshot 2025-04-11 at 12 09 18 PM" src="https://github.com/user-attachments/assets/0798fee0-449c-43b3-9386-459646ceeb05" />
+
+
+<img width="1191" alt="Screenshot 2025-04-11 at 12 09 18 PM" src="https://github.com/user-attachments/assets/68b59cb0-ab83-4b6f-b1ce-3d11816bc3ab" />
+
+
+
+
 
 ## Installation
 
